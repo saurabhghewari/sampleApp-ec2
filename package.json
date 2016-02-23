@@ -1,0 +1,29 @@
+{
+  "name": "sampleapp-ec2",
+  "version": "1.0.0",
+  "description": "aws hosting sample application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabhghewari/sampleApp-ec2.git"
+  },
+  "keywords": [
+    "aws",
+    "sample",
+    "hosting",
+    "express",
+    "nodejs"
+  ],
+  "author": "saurabh ghewari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurabhghewari/sampleApp-ec2/issues"
+  },
+  "homepage": "https://github.com/saurabhghewari/sampleApp-ec2#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
