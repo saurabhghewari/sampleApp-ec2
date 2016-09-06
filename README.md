@@ -2,7 +2,9 @@
 
   Mongodump is a utility for creating a binary export of the contents of a database. mongodump can export data from either mongod or mongos instances. [MongoDB Docs](https://docs.mongodb.com/manual/reference/program/mongodump/)
   
-  
+
+## Pre-requisites MongoDB Database should be installed on local machine.
+
 ### To Dump the mongodb data type the following command
 #### mongodump --db database_name (your database name)
 - --db database_name, -d database_name
@@ -30,6 +32,4 @@
 
 ## After copying the files to local machine type the following command
 
-    mongorestore --db database_name path/to/dump/database_name_folder/files.bson
-
-
+    mongorestore --db database_name path/to/dump/database_name_folder/
