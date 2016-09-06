@@ -16,7 +16,7 @@
 
 ### Now this folder can be ported to any other machine.
 
-#### Syntax:- scp <source> <destination>
+#### Syntax:- scp source destination
 
 #### To copy a file from B to A while logged into B:
 
