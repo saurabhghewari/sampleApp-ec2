@@ -18,12 +18,12 @@
 
 #### Syntax:- scp <source> <destination>
 
-##### for example
+### for example
 
-##To copy a file from B to A while logged into B:
+####To copy a file from B to A while logged into B:
 
-##scp /path/to/file username@a:/path/to/destination
+    scp /path/to/file username@a:/path/to/destination
 
-##To copy a file from B to A while logged into A:
+####To copy a file from B to A while logged into A:
 
-##scp username@b:/path/to/file /path/to/destination
+    scp username@b:/path/to/file /path/to/destination
