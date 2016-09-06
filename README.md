@@ -27,3 +27,9 @@
 ####To copy a file from B to A while logged into A:
 
     scp username@b:/path/to/file /path/to/destination
+
+## After copying the files to local machine type the following command
+
+    mongorestore --db database_name path/to/dump/database_name_folder/files.bson
+
+
