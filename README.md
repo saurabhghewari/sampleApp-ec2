@@ -8,12 +8,12 @@
 
 ### Configure the New Relic apt repository.
 
-  echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' | sudo tee /etc/apt/sources.list.d/newrelic.list
+   echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' | sudo tee /etc/apt/sources.list.d/newrelic.list
 
-  This command adds deb http://apt.newrelic.com/debian/ newrelic non-free to /etc/apt/sources.list.d/newrelic.list. It creates the file if it does not exist.This step is only required once per system.
+   This command adds deb http://apt.newrelic.com/debian/ newrelic non-free to /etc/apt/sources.list.d/newrelic.list. It creates the file if it does not exist.This step is only required once per system.
 
 ### Trust the New Relic GPG key.
 
-  This step is required to register New Relic as an authenticated source where apt-get will look for new packages. To get the New Relic public apt-key from global key servers, run the following command as root:
+   This step is required to register New Relic as an authenticated source where apt-get will look for new packages. To get the New Relic public apt-key from global key servers, run the following command as root:
 
-  wget -O- https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
+   wget -O- https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
