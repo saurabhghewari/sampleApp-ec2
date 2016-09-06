@@ -17,3 +17,26 @@
    This step is required to register New Relic as an authenticated source where apt-get will look for new packages. To get the New Relic public apt-key from global key servers, run the following command as root:
 
     wget -O- https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
+
+### Update the local package list.
+
+   Execute the following command as root:
+
+    sudo apt-get update
+
+### Install the PHP agent.
+
+   Execute the following command to install directly from the New Relic repositories:
+
+    sudo apt-get install newrelic-php5
+	sudo newrelic-install install
+
+### Configure your application name and New Relic license key.
+    
+   The installation process prompts you for your application name and license key. Your license key appears in the account information section of Account settings -> Rigth-Side Menu -> License Key.
+
+### Restart your web server or FastCGI Process Manager (FPM).
+
+   Wait a few minutes for your application to send data to New Relic. Then, check your app's performance in the New Relic UI.
+
+    sudo service apache2 restart
