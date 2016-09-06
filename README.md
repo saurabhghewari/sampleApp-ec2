@@ -10,5 +10,4 @@
 
   - "echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' | sudo tee /etc/apt/sources.list.d/newrelic.list"
 
-	This command adds deb http://apt.newrelic.com/debian/ newrelic non-free to /etc/apt/sources.list.d/newrelic.list. It creates the file if it does not exist.
-	This step is only required once per system.
+This command adds deb http://apt.newrelic.com/debian/ newrelic non-free to /etc/apt/sources.list.d/newrelic.list. It creates the file if it does not exist.This step is only required once per system.
