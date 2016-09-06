@@ -1,6 +1,6 @@
 # Getting MongoDB dump and Restoring the same.
 
-    ##Dumping MongoDb Database using command line
+##Dumping MongoDb Database using command line
     
     *Open terminal and copy paste the following command
         *mongodump --db <database_name> ("applyd")
