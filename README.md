@@ -30,4 +30,4 @@
 
     mongorestore --db database_name path_to_bson_file
 
-    [Stackoverflow link](http://stackoverflow.com/questions/4880874/how-do-i-create-a-mongodb-dump-of-my-database)
+[Stackoverflow](http://stackoverflow.com/questions/4880874/how-do-i-create-a-mongodb-dump-of-my-database)
