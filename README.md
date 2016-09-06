@@ -5,8 +5,8 @@
   
 ### To Dump the mongodb data type the following command
 #### mongodump --db database_name (your database name)
-- --db <database>, -d <database>
+- --db database_name, -d database_name
   Specifies a database to backup. If you do not specify a database, mongodump copies all databases in this instance into the dump files.
 
-- --collection <collection>, -c <collection>
+- --collection collection_name, -c collection_name
   Specifies a collection to backup. If you do not specify a collection, this option copies all collections in the specified database or instance to the dump files.
