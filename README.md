@@ -1,33 +1,18 @@
-# [MongoDB] data backup and restore.
+# PHP agent installation: Ubuntu and Debian
 
-  Mongodump is a utility for creating a binary export of the contents of a database. mongodump can export data from either mongod or mongos instances. [MongoDB Docs](https://docs.mongodb.com/manual/reference/program/mongodump/)
-  
+    This procedure is for installing New Relic's PHP agent using Ubuntu or Debian. For procedures to install the monitoring agent for New Relic Servers, see [Server monitor installation: Ubuntu and Debian.](https://docs.newrelic.com/docs/servers/new-relic-servers-linux/installation-configuration/servers-installation-ubuntu-debian)
 
-## Pre-requisites 
+## Use apt (recommended)
     
-    MongoDB Database should be installed on local machine.
+    Run the commands in this procedure as root.
 
-# Getting Dump usign mongodump from production server or Hosted(live) server.
+1. Configure the New Relic apt repository.
 
-    mongodump --db database_name (your database name)
+- "echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' | sudo tee /etc/apt/sources.list.d/newrelic.list"
 
-### Above command creates dump folders as shown below in current directory.
-- dump => database_name_folder ==> files.bson (bson files)
+	This command adds deb http://apt.newrelic.com/debian/ newrelic non-free to /etc/apt/sources.list.d/newrelic.list. It creates the file if it does not exist.
+	This step is only required once per system.
 
-### Now this folder can be ported to any other machine.
+2. Trust the New Relic GPG key.
 
-#### Syntax:- scp source destination
-
-#### To copy a file from B to A while logged into B:
-
-    scp /path/to/file username@a:/path/to/destination
-
-#### To copy a file from B to A while logged into A:
-
-    scp username@b:/path/to/file /path/to/destination
-
-## After copying the files to local machine type the following command
-
-    mongorestore --db database_name path_to_bson_file
-
-[Stackoverflow](http://stackoverflow.com/questions/4880874/how-do-i-create-a-mongodb-dump-of-my-database)
+- 
