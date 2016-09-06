@@ -13,5 +13,5 @@
 
 ### Above command creates dump folders as shown below
 - -dump
-- --database_name_folder
-- ---files.bson (bson files)
+   --database_name_folder
+      ---files.bson (bson files)
