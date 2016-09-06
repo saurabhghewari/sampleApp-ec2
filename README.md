@@ -12,6 +12,6 @@
   Specifies a collection to backup. If you do not specify a collection, this option copies all collections in the specified database or instance to the dump files.
 
 ### Above command creates dump folders as shown below
-- -dump
-   --database_name_folder
-      ---files.bson (bson files)
+- dump
+   => database_name_folder
+      ==>files.bson (bson files)
