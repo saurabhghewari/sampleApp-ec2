@@ -12,6 +12,18 @@
   Specifies a collection to backup. If you do not specify a collection, this option copies all collections in the specified database or instance to the dump files.
 
 ### Above command creates dump folders as shown below
-- dump
-   => database_name_folder
-      ==>files.bson (bson files)
+- dump => database_name_folder ==> files.bson (bson files)
+
+### Now this folder can be ported to any other machine.
+
+#### Syntax:- scp <source> <destination>
+
+##### for example
+
+##To copy a file from B to A while logged into B:
+
+##scp /path/to/file username@a:/path/to/destination
+
+##To copy a file from B to A while logged into A:
+
+##scp username@b:/path/to/file /path/to/destination
