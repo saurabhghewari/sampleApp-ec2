@@ -28,5 +28,6 @@
 
 ## After copying the files to local machine type the following command
 
-    mongorestore --db database_name path/to/dump/database_name_folder/
+    mongorestore --db database_name path_to_bson_file
 
+    [Stackoverflow link](http://stackoverflow.com/questions/4880874/how-do-i-create-a-mongodb-dump-of-my-database)
