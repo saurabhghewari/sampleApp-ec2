@@ -5,30 +5,24 @@
 
 ## Pre-requisites 
     
-###  MongoDB Database should be installed on local machine.
+    MongoDB Database should be installed on local machine.
 
-## To Dump the mongodb data type the following command
-#### mongodump --db database_name (your database name)
-- --db database_name, -d database_name
-  Specifies a database to backup. If you do not specify a database, mongodump copies all databases in this instance into the dump files.
+# Getting Dump usign mongodump from production server or Hosted(live) server.
 
-- --collection collection_name, -c collection_name
-  Specifies a collection to backup. If you do not specify a collection, this option copies all collections in the specified database or instance to the dump files.
+    mongodump --db database_name (your database name)
 
-### Above command creates dump folders as shown below
+### Above command creates dump folders as shown below in current directory.
 - dump => database_name_folder ==> files.bson (bson files)
 
 ### Now this folder can be ported to any other machine.
 
 #### Syntax:- scp <source> <destination>
 
-### for example
-
-####To copy a file from B to A while logged into B:
+#### To copy a file from B to A while logged into B:
 
     scp /path/to/file username@a:/path/to/destination
 
-####To copy a file from B to A while logged into A:
+#### To copy a file from B to A while logged into A:
 
     scp username@b:/path/to/file /path/to/destination
 
